@@ -19,7 +19,11 @@ p {
 
 .logo-position {
     padding-top: calc(60vh / 2);
-    font-size: 65px;
+    font-size: 100px;
+}
+
+h5 {
+    font-size: 1.8rem;
 }
 
 /* Separator */
@@ -54,8 +58,23 @@ p {
 
 /* Cover */
 .cover-image {
+    width: 100%;
+    height: calc(100vh - 56px);
+    padding: 0;
+}
+#cover {
+    position:relative;
+}
+#cover::before {
+    content: "";
+    position: absolute;
     background: url("./img/cover.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    width: 100%;
     height: calc(100vh - 56px);
+    left:0;
+    top:0;
+    z-index: -1;
+    opacity: 0.3;
 }
