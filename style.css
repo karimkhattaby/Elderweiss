@@ -1,0 +1,61 @@
+body {
+    margin: auto 0;
+}
+
+p {
+    margin-top: 24px;
+}
+
+/* Logo */
+.logo-home {
+    padding-top: 2px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.logo {
+    font-family: 'Ruthie', cursive;
+}
+
+.logo-position {
+    padding-top: calc(60vh / 2);
+    font-size: 65px;
+}
+
+/* Separator */
+.separator-class {
+    height: 56px;
+}
+
+/* Nav */
+.navbar-light .navbar-brand {
+    color: #1E5F9F;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #1E5F9F;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.rectangle-class {
+    padding: 4px 5px 4px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    position: relative;
+    background-color: #003471;
+}
+
+/* Cover */
+.cover-image {
+    background: url("./img/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: calc(100vh - 56px);
+}
