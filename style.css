@@ -79,3 +79,10 @@ h5 {
     background-color: #003471;
     border-color: #003471;
 }
+
+/* Error */
+#error{
+    color: #ff0099;
+    font-size: 0.8em;
+    font-weight: bold;
+}
