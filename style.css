@@ -74,6 +74,40 @@ h5 {
     opacity: 0.3;
 }
 
+/* Why us cards */
+#why-us {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#why-us-card {
+    border: none;
+    padding: 0 60px;
+}
+
+.card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.why-us-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    color: #1E5F9F;
+}
+
+.why-us-icon {
+    align-self: center;
+    height: 150px;
+    width: 150px;
+}
+
+#event {
+    margin: 15px 0;
+    height: 120px;
+}
+
 /* Join us */
 .btn-primary {
     background-color: #003471;
