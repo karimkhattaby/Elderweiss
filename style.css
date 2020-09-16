@@ -28,7 +28,7 @@ h5 {
 
 /* Separator */
 .separator-class {
-    height: 56px;
+    height: 61px;
 }
 
 /* Nav */
@@ -54,7 +54,7 @@ h5 {
 /* Cover */
 .cover-image {
     width: 100%;
-    height: calc(100vh - 56px);
+    height: calc(100vh - 61px);
     padding: 0;
 }
 #cover {
@@ -67,7 +67,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    height: calc(100vh - 56px);
+    height: calc(100vh - 61px);
     left:0;
     top:0;
     z-index: -1;
