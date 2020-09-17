@@ -1,9 +1,11 @@
 fetch("https://elderweiss.herokuapp.com/");
-const link = "http://google.com";
+const link = "https://www.facebook.com/groups/elderweiss/";
+const linkArabic = "https://www.facebook.com/groups/elderweiss.arabic/";
 const form = document.querySelector("form");
 const lang = document.querySelector("html").getAttribute("lang");
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    document.getElementById('joinBtn').disabled = true;
     const email = form.email.value;
     
     const emailError = document.querySelector("#error");
@@ -28,7 +30,7 @@ form.addEventListener("submit", async (e) => {
             newElement.innerHTML = `<strong>Join our Facebook Community</strong> <a href="${link}">By Clicking Here</a>`;
             if (lang === "ar") {
                 form.parentNode.parentNode.children[1].textContent = "لقد قمت بالتسجيل بنجاح في قائمتنا البريدية. سنخطرك عبر بريدك الإلكتروني بفعالياتنا المقبلة.";
-                newElement.innerHTML = `<strong>انضم إلينا في مجموعة الفيسبوك</strong> <a href="${link}">بالنقر هنا</a>`;
+                newElement.innerHTML = `<strong>انضم إلينا في مجموعة الفيسبوك</strong> <a href="${linkArabic}">بالنقر هنا</a>`;
             }
             form.replaceWith(newElement);
         }
@@ -40,7 +42,7 @@ form.addEventListener("submit", async (e) => {
                 newError.innerHTML = `Join our facebook group <a href="${link}">Here</a> if you haven't already joined it`;
                 if (lang === "ar") {
                     emailError.textContent = "بريدك الإلكتروني موجود مسبقاً";
-                    newError.innerHTML = `انضم إلينا في مجموعة الفيسبوك <a href="${link}">هنا</a> إن لم تكن قمت بذلك من قبل`;
+                    newError.innerHTML = `انضم إلينا في مجموعة الفيسبوك <a href="${linkArabic}">هنا</a> إن لم تكن قمت بذلك من قبل`;
                 }
                 emailError.parentNode.appendChild(newError);
             }
@@ -51,4 +53,5 @@ form.addEventListener("submit", async (e) => {
             emailError.textContent = "حدث خطأ في الاتصال مع الخادم. برجاء المحاولة مرة أخرى لاحقاً";
         }
     }
+    document.getElementById('joinBtn').disabled = false;
 });
