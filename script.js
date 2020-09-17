@@ -21,7 +21,10 @@ form.addEventListener("submit", async (e) => {
             method: "POST",
             mode: "cors",
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({email: email})
+            body: JSON.stringify({
+                email: email,
+                language: lang
+            })
         })
         const data = await res.json();
         if (res.status === 200) {
